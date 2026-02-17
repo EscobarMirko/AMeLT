@@ -346,13 +346,14 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 .bloque {
   font-size: 20px;
   line-height: 1.1;
+  text-align: center;   /* centra todo el contenido */
 }
 
 .bloque .linea-titulo {
   display: block;
   font-size: 22px;
   font-weight: 800;
-	align-items: center;
+  text-align: center;
 }
 
 .bloque .numero-destacado {
@@ -360,9 +361,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   font-size: 30px;
   font-weight: 600;
   line-height: 1;
-	padding-left: 30px;
-	align-content:center;
+  padding-left: 0;      /* importante: esto te estaba empujando a la izquierda */
+  text-align: center;
 }
+
 
 /* ======================================
    INFOBOX – KADENCE (DESPLEGABLE)
