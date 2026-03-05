@@ -580,14 +580,90 @@ body.page-id-1714 .site-header .button {
   }
 }
 
+/* ======================================
+   TITULOS DE CADA PROGRAMA
+====================================== */
 
-@media (max-width: 768px) {
+/* ======================================
+   TITULOS DE PROGRAMAS
+====================================== */
 
-  .columna-negra {
-    transform: translateX(20px);
-  }
+/* CONTENEDOR */
+.lista-programa{
+list-style:none;
+counter-increment: list-item;
+padding:0;
+margin:0;
+margin-left: 0px;
+font-family:'Avantt', sans-serif;
+}
+
+/* ITEM */
+.lista-programa li{
+display:flex;
+align-items:flex-start;
+gap:10px;
+font-size:34px;
+font-weight:600;
+line-height:1.25;
+max-width:1200px;
+color:#3b3b3b;
+}
+
+/* NUMERO */
+.lista-programa li::before{
+content: counter(list-item) ".";
+font-size:90px;
+font-weight:700;
+line-height:1;
+color:#555;
+width:90px;        /* ancho fijo del número */
+text-align:right;  /* alinea todos los números */
+flex-shrink:0;
+}
+
+/* MOVIL */
+
+@media (max-width:768px){
+
+.lista-programa li{
+font-size:20px;
+max-width:100%;
+gap:8px;
+}
+
+.lista-programa li::before{
+font-size:42px;
+width:40px;
+}
 
 }
+
+
+/*======================================
+   putos sliders
+====================================== */
+
+/* DESKTOP */
+.slider-mobile{
+display:none;
+}
+
+/* MOBILE */
+@media (max-width:768px){
+
+.slider-desktop{
+display:none;
+}
+
+.slider-mobile{
+display:block;
+}
+
+}
+
+
+
 
 
 
