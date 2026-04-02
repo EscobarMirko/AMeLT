@@ -358,19 +358,39 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 .bloque .linea-titulo {
   display: block;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 800;
   text-align: center;
+	line-height: 0;
 }
 
 .bloque .numero-destacado {
   display: block;
   font-size: 30px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 0;
   padding-left: 0;      /* importante: esto te estaba empujando a la izquierda */
-  text-align: center;
+	text-align: center;
 }
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .invertir-bloques .kt-inside-inner-col > *:first-child {
+    order: 2 !important;
+  }
+
+  .invertir-bloques .kt-inside-inner-col > *:nth-child(2) {
+    order: 1 !important;
+  }
+}
+
+
+
 
 
 /* ======================================
@@ -446,7 +466,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 .texto-justificado {
 	text-align: justify;
-	hyphens: absolute;
+	hyphens: auto;
 }
 
 .texto-justificado:after {
@@ -459,10 +479,12 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 @media (max-width: 768px) {
   .wp-block-columns {
     flex-direction: column !important;
+		
   }
 
   .wp-block-column {
     width: 100% !important;
+		
   }
 }
 
@@ -474,13 +496,22 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 }
 
 @media (max-width: 768px) {
-
   .columna-negra {
     width: calc(100% - 10px) !important;
     margin-right: 10px;
+		
   }
-
 }
+
+@media (max-width: 768px) {
+  .columna-negra p{
+    text-align: left !important;
+  }
+}
+
+
+
+
 
 
 
@@ -676,22 +707,45 @@ width:40px;
    putos sliders
 ====================================== */
 
-/* DESKTOP */
-.slider-mobile{
-display:none;
+/* acordeon */
+@media (max-width: 768px){
+  .acordeon {
+    display: none !important;
+  }
 }
 
-/* MOBILE */
-@media (max-width:768px){
-
-.slider-desktop{
-display:none;
+/* Desktop */
+.slider-mobile {
+  display: none !important;
 }
 
-.slider-mobile{
-display:block;
+/* Mostrar solo en móvil */
+@media (max-width: 768px){
+  .slider-mobile {
+    display: block !important;
+  }
 }
 
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  p.text-propuesta {
+    text-align: center !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .wp-block-kadence-advancedheading {
+    text-align: center !important;
+  }
 }
 
 
@@ -769,7 +823,6 @@ display:block;
 	<li id="menu-item-2710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710"><a href="https://escobarmirko.github.io/AMeLT/servicios/programa-formativo-5/">Programa formativo 5</a></li>
 </ul>
 </li>
-<li id="menu-item-248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a href="https://escobarmirko.github.io/AMeLT/noticias-2/">Research</a></li>
 </ul>		</div>
 	</nav><!-- #site-navigation -->
 	</div><!-- data-section="primary_navigation" -->
@@ -940,10 +993,8 @@ display:block;
 	<li id="menu-item-2369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2369"><a href="https://escobarmirko.github.io/AMeLT/servicios/programa-formativo-3/">Programa formativo 3</a></li>
 	<li id="menu-item-2370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2370"><a href="https://escobarmirko.github.io/AMeLT/servicios/programa-formativo-4/">Programa formativo 4</a></li>
 	<li id="menu-item-2371" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2371"><a href="https://escobarmirko.github.io/AMeLT/servicios/programa-formativo-5/">Programa formativo 5</a></li>
-	<li id="menu-item-2372" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2372"><a href="https://escobarmirko.github.io/AMeLT/servicios/programa-formativo-6/">Programa formativo 6</a></li>
 </ul>
 </li>
-<li id="menu-item-2375" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2375"><a href="https://escobarmirko.github.io/AMeLT/noticias-2/">Research</a></li>
 <li id="menu-item-2374" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2374"><a href="https://escobarmirko.github.io/AMeLT/contacto/">Contacto</a></li>
 </ul>		</div>
 	</nav><!-- #site-navigation -->
