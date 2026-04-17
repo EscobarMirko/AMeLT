@@ -68,7 +68,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=global-styles-inline-css */
 </style>
 
-<link rel="stylesheet" id="contact-form-7-css" href="https://escobarmirko.github.io/AMeLT/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.4" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="https://escobarmirko.github.io/AMeLT/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.5" media="all">
 <link rel="stylesheet" id="uaf_client_css-css" href="https://escobarmirko.github.io/AMeLT/wp-content/uploads/useanyfont/uaf.css?ver=1768082415" media="all">
 <link rel="stylesheet" id="kadence-global-css" href="https://escobarmirko.github.io/AMeLT/wp-content/themes/kadence/assets/css/global.min.css?ver=1.4.2" media="all">
 <style id="kadence-global-inline-css">
@@ -467,6 +467,31 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     }
 }
 
+@media (max-width: 768px){
+
+  .iconos-footer {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .iconos-footer .wp-block-social-links {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+}
+
+/*newsletter*/
+
+@media (max-width: 768px){
+  h2.newsletter-movil {
+    text-align: left !important;
+  }
+}
+
+
 /*======================================
    bloque negro
 ====================================== */
@@ -714,22 +739,17 @@ width:40px;
    putos sliders
 ====================================== */
 
-/* acordeon */
+/* OCULTAR el de escritorio en móvil */
 @media (max-width: 768px){
-  .acordeon {
+  .acordeon-desktop {
     display: none !important;
   }
 }
 
-/* Desktop */
-.slider-mobile {
-  display: none !important;
-}
-
-/* Mostrar solo en móvil */
-@media (max-width: 768px){
-  .slider-mobile {
-    display: block !important;
+/* OCULTAR el de móvil en escritorio */
+@media (min-width: 769px){
+  .acordeon-mobile {
+    display: none !important;
   }
 }
 
@@ -738,9 +758,7 @@ width:40px;
 
 
 
-
-
-
+/*propuesta*/
 
 @media (max-width: 768px) {
   p.text-propuesta {
@@ -1030,13 +1048,13 @@ Los avatares de los comentaristas provienen de <a href="https://gravatar.com/">G
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 //# sourceURL=wp-i18n-js-after
 </script>
-<script src="https://escobarmirko.github.io/AMeLT/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.4" id="swv-js"></script>
+<script src="https://escobarmirko.github.io/AMeLT/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.5" id="swv-js"></script>
 <script id="contact-form-7-js-translations">
 ( function( domain, translations ) {
 	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
 	localeData[""].domain = domain;
 	wp.i18n.setLocaleData( localeData, domain );
-} )( "contact-form-7", {"translation-revision-date":"2025-11-28 00:03:05+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"es_CL"},"This contact form is placed in the wrong place.":["Este formulario de contacto est\u00e1 situado en el lugar incorrecto."],"Error:":["Error:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+} )( "contact-form-7", {"translation-revision-date":"2026-02-11 05:53:08+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"es_CL"},"This contact form is placed in the wrong place.":["Este formulario de contacto est\u00e1 situado en el lugar incorrecto."],"Error:":["Error:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
 //# sourceURL=contact-form-7-js-translations
 </script>
 <script id="contact-form-7-js-before">
@@ -1048,7 +1066,7 @@ var wpcf7 = {
 };
 //# sourceURL=contact-form-7-js-before
 </script>
-<script src="https://escobarmirko.github.io/AMeLT/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.4" id="contact-form-7-js"></script>
+<script src="https://escobarmirko.github.io/AMeLT/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.5" id="contact-form-7-js"></script>
 <script src="https://escobarmirko.github.io/AMeLT/wp-includes/js/comment-reply.min.js?ver=6.9.4" id="comment-reply-js" async data-wp-strategy="async" fetchpriority="low"></script>
 <script id="kadence-navigation-js-extra">
 var kadenceConfig = {"screenReader":{"expand":"Men\u00fa hijo","expandOf":"Men\u00fa hijo de","collapse":"Men\u00fa hijo","collapseOf":"Men\u00fa hijo de"},"breakPoints":{"desktop":"768","tablet":768},"scrollOffset":"0"};
