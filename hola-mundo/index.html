@@ -468,12 +468,28 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 }
 
 @media (max-width: 768px){
-
   .iconos-footer {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
   }
+	
+	@media (max-width: 768px){
+  .iconos-footer{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative;
+    left: 17px;
+  }
+}
+	
+	
+	
+	
+	
+	
+	
 
   .iconos-footer .wp-block-social-links {
     display: flex !important;
@@ -482,6 +498,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     margin: 0 auto !important;
   }
 }
+
 
 /*newsletter*/
 
